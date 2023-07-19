@@ -10,7 +10,7 @@ read -rp "What is your name: " name
 echo "Hello $name"
 
 #If condition is true, then display message to user
-if test "$name" = Chris; then
+if [ "$name" = Chris ]; then
     echo "You're really good at coding :)"
 else 
     echo "I don't know you..."
