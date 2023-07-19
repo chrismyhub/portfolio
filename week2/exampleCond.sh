@@ -10,7 +10,9 @@ read -rp "What is your name: " name
 echo "Hello $name"
 
 #If condition is true, then display message to user
-if [ "$name" = Chris ]
+# Using || generates the OR condition
+#Using && generates the AND condition
+if [ "$name" = Chris ] || [ "$name" = chris ]
 then
     echo "You're really good at coding :)"
 else 
