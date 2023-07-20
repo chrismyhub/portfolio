@@ -1,7 +1,8 @@
 #!/bin/bash
 
 
-#Ask the user to type a secret password (hide that input).
+#Prompt user to type a secret password (hide that input) and save as a variable.
+read -rsp "Please enter a Secret Password: " secretPassword
 
 #Check the user’s password against the hash stored in 'secret.txt'.
 
