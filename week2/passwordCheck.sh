@@ -19,8 +19,6 @@ then
 
 #Check the user’s password against the hash stored in 'secret.txt' and if the user’s password is incorrect print “Access Denied” and quit with the exit code 1.
 else 
-# [[ $(echo -n "$secretPassword" | sha256sum -c secret.txt) = "-: FAILED" ]]
-# then
 
     #Display Access Denied to user
     echo "Access Denied"
