@@ -8,7 +8,8 @@ read -rsp "Please enter a Secret Password: " secretPassword
 echo
 
 #Check the user’s password against the hash stored in 'secret.txt'and if the user’s password is correct, print “Access Granted” and quit with the exit code 0.
-if [[ $(echo -n "$secretPassword" | sha256sum -c secret.txt) = "-: OK" ]]
+#Used "&>/dev/null" to suppress sha256sum warnings
+if [[ $(echo -n "$secretPassword" | sha256sum -c secret.txt) = "-: OK" ]] &>/dev/null
 then
 
     #Display Access Granted to user
