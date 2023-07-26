@@ -27,3 +27,9 @@ case $var in
 #End of default case statement
 ;;
 esac
+
+if [[ _AND TEST_ ]] && ( [[ _OR OPTION 1_ ]] || [[ _OR OPTION 2_ ]] ); then
+#_CODE IF TRUE_
+else
+#_CODE IF FALSE_
+fi
