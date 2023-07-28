@@ -108,4 +108,145 @@
 	"description": "Adds IF-ELSE test with one AND and two OR options" 
 
 	} 
+	,
+	"Add color black": { 
+		
+	"prefix": "BLACK", 
+  
+	"body": [ 
+  
+	"\\033[30m" 
+  
+	], 
+  
+	"description": "Add color black to script" 
+  
+	} 
+
+
+	,
+	"Add color red": { 
+		
+	"prefix": "RED", 
+  
+	"body": [ 
+  
+	"\\033[31m" 
+  
+	], 
+  
+	"description": "Add color red to script" 
+  
+	} 
+
+	,
+	"Add color green": { 
+		
+	"prefix": "GREEN", 
+  
+	"body": [ 
+  
+	"\\033[32m" 
+  
+	], 
+  
+	"description": "Add color green to script" 
+  
+	}
+
+
+	,
+	"Add color brown": { 
+		
+	"prefix": "BROWN", 
+  
+	"body": [ 
+  
+	"\\033[33m" 
+  
+	], 
+  
+	"description": "Add color brown to script" 
+  
+	}
+
+
+	,
+	"Add color blue": { 
+		
+	"prefix": "BLUE", 
+  
+	"body": [ 
+  
+	"\\033[34m" 
+  
+	], 
+  
+	"description": "Add color blue to script" 
+  
+	}
+
+
+	,
+	"Add color purple": { 
+		
+	"prefix": "PURPLE", 
+  
+	"body": [ 
+  
+	"\\033[35m" 
+  
+	], 
+  
+	"description": "Add color purple to script" 
+  
+	}
+
+
+	,
+	"Add color cyan": { 
+		
+	"prefix": "CYAN", 
+  
+	"body": [ 
+  
+	"\\033[36m" 
+  
+	], 
+  
+	"description": "Add color cyan to script" 
+  
+	}
+
+
+	,
+	"Add color grey": { 
+		
+	"prefix": "GREY", 
+  
+	"body": [ 
+  
+	"\\033[37m" 
+  
+	], 
+  
+	"description": "Add color grey to script" 
+  
+	}
+
+
+	,
+	"Add No Color": { 
+		
+	"prefix": "NOCOLOR", 
+  
+	"body": [ 
+  
+	"\\033[0m" 
+  
+	], 
+  
+	"description": "Add No Color to script" 
+  
+	}
 }
