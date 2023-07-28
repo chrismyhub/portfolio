@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Color code variables
 red_color='\033[31m'
 green_color='\033[32m'
 blue_color='\033[34m'
