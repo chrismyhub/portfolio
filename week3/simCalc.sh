@@ -1,5 +1,11 @@
 #!/bin/bash
 
+red_color='\033[31m'
+green_color='\033[32m'
+blue_color='\033[34m'
+purple_color='\033[35m'
+NC='\033[0m'
+
 #Display welcome message
 echo "Welcome to the Simple Calculator..."
 
@@ -7,16 +13,16 @@ echo "Welcome to the Simple Calculator..."
 echo
 
 #Display menu options
-echo "1. Add"
-echo "2. Subtract"
-echo "3. Multiply"
-echo "4. Divide"
+printf "${blue_color}1. Add${NC}\n"
+printf "${green_color}2. Subtract${NC}\n"
+printf "${red_color}3. Multiply${NC}\n"
+printf "${purple_color}4. Divide${NC}\n"
 
 #Provide line space for menu
 echo
     
 #Prompt user to select an option from 1-4 and save it as a variable
-read -p "Please select an option between 1-3: " option
+read -p "Please select an option between 1-4: " option
 
 #Start of all case statements referencing $option variable
 case $option in
