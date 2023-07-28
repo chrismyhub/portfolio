@@ -39,8 +39,8 @@ expr $first + $second
 2)
 
 #Prompt user to enter two numbers to subtract
-read -p "Please enter first number to subtract: " first
-read -p "Please enter second number to subtract: " second
+read -p "Please enter minuend: " first
+read -p "Please enter subtrahend: " second
 echo -n "Answer: "
 expr $first - $second
 
@@ -63,8 +63,8 @@ expr $first \* $second
 4)
 
 #Prompt user to enter two numbers to divide
-read -p "Please enter first number to divide: " first
-read -p "Please enter second number to divide: " second
+read -p "Please enter dividend: " first
+read -p "Please enter divisor: " second
 echo -n "Answer: "
 expr $first / $second
 
