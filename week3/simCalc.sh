@@ -34,6 +34,11 @@ case $option in
 #Prompt user to enter two numbers to add
 read -p "Please enter first number to add: " first
 read -p "Please enter second number to add: " second
+
+#Display operation in math form
+printf "${blue_color}$first + $second${NC}\n"
+
+#Displaythe answer to the equation
 echo -n "Answer: "
 expr $first + $second
 
@@ -47,6 +52,11 @@ expr $first + $second
 #Prompt user to enter two numbers to subtract
 read -p "Please enter minuend: " first
 read -p "Please enter subtrahend: " second
+
+#Display operation in math form
+printf "${green_color}$first - $second${NC}\n"
+
+#Displaythe answer to the equation
 echo -n "Answer: "
 expr $first - $second
 
@@ -59,6 +69,11 @@ expr $first - $second
 #Prompt user to enter two numbers to multiply
 read -p "Please enter first number to multiply: " first
 read -p "Please enter second number to multiply: " second
+
+#Display operation in math form
+printf "${red_color}$first x $second${NC}\n"
+
+#Displaythe answer to the equation
 echo -n "Answer: "
 expr $first \* $second
 
@@ -71,6 +86,11 @@ expr $first \* $second
 #Prompt user to enter two numbers to divide
 read -p "Please enter dividend: " first
 read -p "Please enter divisor: " second
+
+#Display operation in math form
+printf "${purple_color}$first ÷ $second${NC}\n"
+
+#Displaythe answer to the equation
 echo -n "Answer: "
 expr $first / $second
 
