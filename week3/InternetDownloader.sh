@@ -9,6 +9,7 @@ while true
         #If user types exit, then quit the script immidiately...
         if [[ $URL = exit ]]
             then 
+                #Exit code
                 exit 0
         fi
         
@@ -17,6 +18,9 @@ while true
 
         #Download file from $URL and save it to $LOCATION    
         wget -P "$LOCATION" "$URL"
+
+        #Exit code
+        exit 1
 
     #End of while loop
     done
