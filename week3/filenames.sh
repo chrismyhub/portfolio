@@ -12,8 +12,7 @@ do
     #If line is not blank display the line and...
     echo -n $myline " - "
     #...if the line begins with a "." then it is a directory...
-    # (The "&>/dev/null" suppresses errors and warnings)
-    if grep -i &>/dev/null "^[.]" "$myline" = "$myline"
+    if [ "${myline%"${myline#?}"}" = "." ]
     then
         #...then display "That's a directory"
         echo "That's a directory" 
