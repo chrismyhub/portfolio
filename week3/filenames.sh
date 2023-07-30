@@ -13,7 +13,7 @@ do
     echo -n $myline " - "
     #...if the line begins with a "." then it is a directory...
     # (The "&>/dev/null" suppresses errors and warnings)
-    if grep &>/dev/null "^[.]" "$myline" 
+    if grep -i &>/dev/null "^[.]" "$myline" = "$myline"
     then
         #...then display "That's a directory"
         echo "That's a directory" 
