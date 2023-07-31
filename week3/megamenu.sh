@@ -13,6 +13,7 @@ if [ $? -eq 0 ]; then
     echo "1. Create a folder"
     echo "2. Copy a folder"
     echo "3. Set a password"
+    echo "4. Calculator"
 
     #Provide line space for menu
     echo
@@ -49,6 +50,15 @@ if [ $? -eq 0 ]; then
 
     #...run setPassword.sh
     /home/student/student/scripts/portfolio/week2/setPassword.sh
+
+    #End of case statement 3
+    ;;
+
+    #If number 3 is entered by user, then...
+    4)
+
+    #...run simCalc.sh
+    /home/student/student/scripts/portfolio/week3/simCalc.sh
 
     #End of case statement 3
     ;;
