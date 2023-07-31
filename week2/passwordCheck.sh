@@ -1,8 +1,19 @@
 #!/bin/bash
 
+#Color code variables
+red_color='\033[31m'
+green_color='\033[32m'
+yellow_color='\033[33m'
+NC='\033[0m'
+
+#Colored outputs
+ENTERPASS=$(printf "${yellow_color}Enter Password: ${NC}")
+GRANTED=$(printf "${green_color}Access Granted${NC}")
+DENIED=$(printf "${red_color}Access Denied${NC}")
 
 #Prompt user to type a secret password (hide that input) and save as a variable.
-read -rsp "Please enter a Secret Password: " secretPassword
+read -rsp "$ENTERPASS" secretPassword
+# printf "${red_color}Enter Password: ${NC}\n"
 
 #Add space for resulting message to user
 echo
@@ -13,7 +24,7 @@ if [[ $(echo -n "$secretPassword" | sha256sum -c /home/student/student/scripts/p
 then
 
     #Display Access Granted to user
-    echo "Access Granted"
+    echo "$GRANTED"
 
     #Exit code 
     exit 0
@@ -22,7 +33,7 @@ then
 else 
 
     #Display Access Denied to user
-    echo "Access Denied"
+    echo "$DENIED"
     
     #Exit code
     exit 1
