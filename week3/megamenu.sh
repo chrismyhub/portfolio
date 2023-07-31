@@ -6,100 +6,114 @@
 #Check if exit code is "0" then display menu
 if [ $? -eq 0 ]; then
 
-    #Provide line space for menu
-    echo
 
-    #Display menu options
-    echo "1. Create a folder"
-    echo "2. Copy a folder"
-    echo "3. Set a password"
-    echo "4. Calculator"
-    echo "5. Create Week Folders"
-    echo "6. Check Filenames"
-    echo "7. Download a File"
+    #Start of while loop
+    while true
+    do
 
-    #Provide line space for menu
-    echo
-    
-    #Prompt user to select an option from 1-7 and save it as a variable
-    read -p "Please select an option between 1-7: " option
+        #Provide line space for menu
+        echo
 
-    #Case statement depending on what option the user selects
-    
-    #Start of all case statements referencing $option variable
-    case $option in
+        #Display menu options
+        echo "1. Create a folder"
+        echo "2. Copy a folder"
+        echo "3. Set a password"
+        echo "4. Calculator"
+        echo "5. Create Week Folders"
+        echo "6. Check Filenames"
+        echo "7. Download a File"
 
-    #If number 1 is entered by user, then...
-    #Close bracket sets the end of the case entered
-    1)
+        #Provide line space for menu
+        echo
+        
+        #Prompt user to select an option from 1-7 and save it as a variable
+        read -p "Please select an option between 1-7 (or type 'exit' to quit): " option
 
-    #...run foldermaker.sh (absolute path)
-    /home/student/student/scripts/portfolio/week2/foldermaker.sh
-    
-    #End of case statement 1
-    ;;
+        #If user types exit, then quit the script immidiately...
+        if [[ $option = exit ]]
+            then 
+                #Exit code
+                exit 0
+        fi
 
-    #If number 2 is entered by user, then...
-    2)
+        #Case statement depending on what option the user selects
+        
+        #Start of all case statements referencing $option variable
+        case $option in
 
-    #...run copyfolder.sh (absolute path)
-    /home/student/student/scripts/portfolio/week2/copyfolder.sh
+        #If number 1 is entered by user, then...
+        #Close bracket sets the end of the case entered
+        1)
 
-    #End of case statement 2
-    ;;
+        #...run foldermaker.sh (absolute path)
+        /home/student/student/scripts/portfolio/week2/foldermaker.sh
+        
+        #End of case statement 1
+        ;;
 
-    #If number 3 is entered by user, then...
-    3)
+        #If number 2 is entered by user, then...
+        2)
 
-    #...run setPassword.sh
-    /home/student/student/scripts/portfolio/week2/setPassword.sh
+        #...run copyfolder.sh (absolute path)
+        /home/student/student/scripts/portfolio/week2/copyfolder.sh
 
-    #End of case statement 3
-    ;;
+        #End of case statement 2
+        ;;
 
-    #If number 4 is entered by user, then...
-    4)
+        #If number 3 is entered by user, then...
+        3)
 
-    #...run simCalc.sh
-    /home/student/student/scripts/portfolio/week3/simCalc.sh
+        #...run setPassword.sh
+        /home/student/student/scripts/portfolio/week2/setPassword.sh
 
-    #End of case statement 4
-    ;;
+        #End of case statement 3
+        ;;
 
-    #If number 5 is entered by user, then...
-    5)
+        #If number 4 is entered by user, then...
+        4)
 
-    #...run megafoldermaker.sh
-    /home/student/student/scripts/portfolio/week3/megafoldermaker.sh
+        #...run simCalc.sh
+        /home/student/student/scripts/portfolio/week3/simCalc.sh
 
-    #End of case statement 5
-    ;;
+        #End of case statement 4
+        ;;
 
-    #If number 6 is entered by user, then...
-    6)
+        #If number 5 is entered by user, then...
+        5)
 
-    #...run megafoldermaker.sh
-    /home/student/student/scripts/portfolio/week3/filenames.sh
+        #...run megafoldermaker.sh
+        /home/student/student/scripts/portfolio/week3/megafoldermaker.sh
 
-    #End of case statement 6
-    ;;
+        #End of case statement 5
+        ;;
 
-    #If number 7 is entered by user, then...
-    7)
+        #If number 6 is entered by user, then...
+        6)
 
-    #...run megafoldermaker.sh
-    /home/student/student/scripts/portfolio/week3/InternetDownloader.sh
+        #...run megafoldermaker.sh
+        /home/student/student/scripts/portfolio/week3/filenames.sh
 
-    #End of case statement 7
-    ;;
+        #End of case statement 6
+        ;;
 
-    #Defines if no match is found
-    *)
-    ;;
+        #If number 7 is entered by user, then...
+        7)
 
-    #End of all case statements
-    esac
+        #...run megafoldermaker.sh
+        /home/student/student/scripts/portfolio/week3/InternetDownloader.sh
 
+        #End of case statement 7
+        ;;
+
+        #Defines if no match is found
+        *)
+        ;;
+
+        #End of all case statements
+        esac
+
+    #End of while loop
+    done
 
 else
     #If exit code is "1" then exit script
