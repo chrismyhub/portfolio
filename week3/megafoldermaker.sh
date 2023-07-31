@@ -2,17 +2,22 @@
       
 #If there aren't two arguments to the script 
       
-if (( $#!=2 )); then 
+# if (( $#!=2 )); then 
       
-    #Print an error and exit 
+#     #Print an error and exit 
       
-    echo "Error, provide two numbers" && exit 1 
+#     echo "Error, provide two numbers" && exit 1 
       
-fi 
+# fi 
+
+#Prompt user to enter beginning week and save as a variable
+read -p "Please enter the first week to create: " FIRST
+#Prompt user to enter ending week and save as a variable
+read -p "Please enter the last week to create: " LAST
       
 #For every number between the first argument and the last 
       
-for ((i = $1; i <= $2; i++)) 
+for ((i = $FIRST; i <= $LAST; i++)) 
       
 do 
       
