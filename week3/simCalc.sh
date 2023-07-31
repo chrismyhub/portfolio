@@ -43,9 +43,9 @@ printf "${blue_color}$first + $second${NC}\n"
 echo -n "Answer: "
 expr $first + $second
 
-#Prompt user to press any key to continue
+#Prompt user to press any enter to continue
 echo
-read -p "Press any key to continue..."
+read -p "Press any enter to continue..."
 
     
 #End of case statement 1
@@ -65,9 +65,9 @@ printf "${green_color}$first - $second${NC}\n"
 echo -n "Answer: "
 expr $first - $second
 
-#Prompt user to press any key to continue
+#Prompt user to press any enter to continue
 echo
-read -p "Press any key to continue..."
+read -p "Press any enter to continue..."
 
 #End of case statement 2
 ;;
@@ -86,9 +86,9 @@ printf "${red_color}$first x $second${NC}\n"
 echo -n "Answer: "
 expr $first \* $second
 
-#Prompt user to press any key to continue
+#Prompt user to press any enter to continue
 echo
-read -p "Press any key to continue..."
+read -p "Press any enter to continue..."
 
 #End of case statement 3
 ;;
@@ -107,9 +107,9 @@ printf "${purple_color}$first ÷ $second${NC}\n"
 echo -n "Answer: "
 expr $first / $second
 
-#Prompt user to press any key to continue
+#Prompt user to press any enter to continue
 echo
-read -p "Press any key to continue..."
+read -p "Press any enter to continue..."
 
 #End of case statement 3
 ;;

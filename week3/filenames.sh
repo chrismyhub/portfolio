@@ -31,5 +31,9 @@ do
  fi
 done < "$FILE"
 
+#Prompt user to press enter key to continue
+echo
+read -p "Press any enter to continue..."
+
 #Exit code
 exit 0
