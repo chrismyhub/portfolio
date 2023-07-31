@@ -5,6 +5,7 @@ red_color='\033[31m'
 green_color='\033[32m'
 blue_color='\033[34m'
 purple_color='\033[35m'
+yellow_color='\e[1;33m'
 NC='\033[0m'
 
 
@@ -30,15 +31,16 @@ if [ $? -eq 0 ]; then
         echo "5. Create Week Folders"
         echo "6. Check Filenames"
         echo "7. Download a File"
+        echo "8. EXIT"
 
         #Provide line space for menu
         echo
         
-        #Prompt user to select an option from 1-7 and save it as a variable
-        read -p "Please select an option between 1-7 (or type 'exit' to quit): " option
+        #Prompt user to select an option from 1-8 and save it as a variable
+        read -p "Please select an option between 1-8 (or type 'exit' to quit): " option
 
         #If user types exit, then quit the script immidiately...
-        if [[ $option = exit ]]
+        if [[ $option = exit || $option = 8 ]]
             then 
                 #Exit code
                 exit 0
@@ -115,7 +117,7 @@ if [ $? -eq 0 ]; then
 
         #Defines if no match is found ~added warning for user to re-try an available option
         *)
-        printf "${red_color}WARNING: You entered an invalid option!${NC}\n"
+        printf "${yellow_color}WARNING: You entered an invalid option!${NC}\n"
         ;;
 
         #End of all case statements
