@@ -1,5 +1,13 @@
 #!/bin/bash
 
+#Color code variables
+red_color='\033[31m'
+green_color='\033[32m'
+blue_color='\033[34m'
+purple_color='\033[35m'
+NC='\033[0m'
+
+
 #Run passwordCheck script (absolute path)
 /home/student/student/scripts/portfolio/week2/passwordCheck.sh
 
@@ -105,8 +113,9 @@ if [ $? -eq 0 ]; then
         #End of case statement 7
         ;;
 
-        #Defines if no match is found
+        #Defines if no match is found ~added warning for user to re-try an available option
         *)
+        printf "${red_color}WARNING: You entered an invalid option!${NC}\n"
         ;;
 
         #End of all case statements
