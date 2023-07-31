@@ -5,7 +5,7 @@ red_color='\033[31m'
 green_color='\033[32m'
 blue_color='\033[34m'
 purple_color='\033[35m'
-yellow_color='\e[1;33m'
+yellow_color='\033[33m'
 NC='\033[0m'
 
 #Text formatting
@@ -28,14 +28,14 @@ if [ $? -eq 0 ]; then
         echo
 
         #Display menu options
-        echo "1. Create a folder"
-        echo "2. Copy a folder"
-        echo "3. Set a password"
-        echo "4. Calculator"
-        echo "5. Create Week Folders"
-        echo "6. Check Filenames"
-        echo "7. Download a File"
-        echo "8. ${bold}EXIT${normal} "
+        printf "${yellow_color}1. Create a folder${NC}\n"
+        printf "${yellow_color}2. Copy a folder${NC}\n"
+        printf "${yellow_color}3. Set a password${NC}\n"
+        printf "${yellow_color}4. Calculator${NC}\n"
+        printf "${yellow_color}5. Create Week Folders${NC}\n"
+        printf "${yellow_color}6. Check Filenames${NC}\n"
+        printf "${yellow_color}7. Download a File${NC}\n"
+        echo "8. ${bold}EXIT${normal}"
 
 
         #Provide line space for menu
