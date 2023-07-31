@@ -19,8 +19,8 @@ if [ $? -eq 0 ]; then
     #Provide line space for menu
     echo
     
-    #Prompt user to select an option from 1-3 and save it as a variable
-    read -p "Please select an option between 1-3: " option
+    #Prompt user to select an option from 1-7 and save it as a variable
+    read -p "Please select an option between 1-7: " option
 
     #Case statement depending on what option the user selects
     
