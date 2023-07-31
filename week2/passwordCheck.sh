@@ -9,7 +9,7 @@ echo
 
 #Check the user’s password against the hash stored in 'secret.txt'and if the user’s password is correct, print “Access Granted” and quit with the exit code 0.
 #Used "&>/dev/null" to suppress sha256sum warnings
-if [[ $(echo -n "$secretPassword" | sha256sum -c secret.txt) = "-: OK" ]] &>/dev/null
+if [[ $(echo -n "$secretPassword" | sha256sum -c /home/student/student/scripts/portfolio/week2/secret.txt) = "-: OK" ]] &>/dev/null
 then
 
     #Display Access Granted to user
