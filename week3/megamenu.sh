@@ -28,6 +28,8 @@ if [ $? -eq 0 ]; then
         echo
 
         #Display menu options
+        figlet Mega Menu
+        echo
         printf "${yellow_color}1. Create a folder${NC}\n"
         printf "${yellow_color}2. Copy a folder${NC}\n"
         printf "${yellow_color}3. Set a password${NC}\n"
