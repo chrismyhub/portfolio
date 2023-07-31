@@ -29,8 +29,8 @@ if [ $? -eq 0 ]; then
     #Close bracket sets the end of the case entered
     1)
 
-    #...run foldermaker.sh
-    ./foldermaker.sh
+    #...run foldermaker.sh (absolute path)
+    /home/student/student/scripts/portfolio/week2/foldermaker.sh
     
     #End of case statement 1
     ;;
