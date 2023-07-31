@@ -6,8 +6,11 @@ green_color='\033[32m'
 yellow_color='\033[33m'
 NC='\033[0m'
 
+#Text formatting
+bold=$(tput bold)
+
 #Colored outputs
-ENTERPASS=$(printf "${yellow_color}Enter Password: ${NC}")
+ENTERPASS=$(printf "${yellow_color}${bold}Enter Password: ${NC}")
 GRANTED=$(printf "${green_color}Access Granted${NC}")
 DENIED=$(printf "${red_color}Access Denied${NC}")
 
