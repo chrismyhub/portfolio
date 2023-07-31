@@ -14,6 +14,7 @@ if [ $? -eq 0 ]; then
     echo "2. Copy a folder"
     echo "3. Set a password"
     echo "4. Calculator"
+    echo "5. Create Week Folders"
 
     #Provide line space for menu
     echo
@@ -54,13 +55,22 @@ if [ $? -eq 0 ]; then
     #End of case statement 3
     ;;
 
-    #If number 3 is entered by user, then...
+    #If number 4 is entered by user, then...
     4)
 
     #...run simCalc.sh
     /home/student/student/scripts/portfolio/week3/simCalc.sh
 
-    #End of case statement 3
+    #End of case statement 4
+    ;;
+
+    #If number 5 is entered by user, then...
+    5)
+
+    #...run megafoldermaker.sh
+    /home/student/student/scripts/portfolio/week3/megafoldermaker.sh
+
+    #End of case statement 5
     ;;
 
     #Defines if no match is found
