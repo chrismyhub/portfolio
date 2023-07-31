@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#Run passwordCheck script
-./passwordCheck.sh
+#Run passwordCheck script (absolute path)
+/home/student/student/scripts/portfolio/week2/passwordCheck.sh
 
 #Check if exit code is "0" then display menu
 if [ $? -eq 0 ]; then
