@@ -8,6 +8,10 @@ purple_color='\033[35m'
 yellow_color='\e[1;33m'
 NC='\033[0m'
 
+#Text formatting
+bold=$(tput bold)
+normal=$(tput sgr0)
+
 
 #Run passwordCheck script (absolute path)
 /home/student/student/scripts/portfolio/week2/passwordCheck.sh
@@ -31,7 +35,8 @@ if [ $? -eq 0 ]; then
         echo "5. Create Week Folders"
         echo "6. Check Filenames"
         echo "7. Download a File"
-        echo "8. EXIT"
+        echo "8. ${bold}EXIT${normal} "
+
 
         #Provide line space for menu
         echo
