@@ -38,8 +38,8 @@ if [ $? -eq 0 ]; then
     #If number 2 is entered by user, then...
     2)
 
-    #...run copyfolder.sh
-    ./copyfolder.sh
+    #...run copyfolder.sh (absolute path)
+    /home/student/student/scripts/portfolio/week2/copyfolder.sh
 
     #End of case statement 2
     ;;
