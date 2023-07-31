@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Prompt user to enter the file to check and save as a variable
+read -p "Please enter the file to be checked: " FILE
+
 #Start of while loop, referencing each line
 while read myline
 do
@@ -26,7 +29,7 @@ do
         echo "I don't know what this is!"
   fi
  fi
-done < "$1"
+done < "$FILE"
 
 #Exit code
 exit 0
