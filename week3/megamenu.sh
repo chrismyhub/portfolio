@@ -16,6 +16,7 @@ if [ $? -eq 0 ]; then
     echo "4. Calculator"
     echo "5. Create Week Folders"
     echo "6. Check Filenames"
+    echo "7. Download a File"
 
     #Provide line space for menu
     echo
@@ -81,6 +82,15 @@ if [ $? -eq 0 ]; then
     /home/student/student/scripts/portfolio/week3/filenames.sh
 
     #End of case statement 6
+    ;;
+
+    #If number 7 is entered by user, then...
+    7)
+
+    #...run megafoldermaker.sh
+    /home/student/student/scripts/portfolio/week3/InternetDownloader.sh
+
+    #End of case statement 7
     ;;
 
     #Defines if no match is found
