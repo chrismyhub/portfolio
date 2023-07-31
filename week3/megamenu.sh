@@ -48,7 +48,7 @@ if [ $? -eq 0 ]; then
     3)
 
     #...run setPassword.sh
-    ./setPassword.sh
+    /home/student/student/scripts/portfolio/week2/setPassword.sh
 
     #End of case statement 3
     ;;
