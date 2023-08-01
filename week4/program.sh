@@ -7,6 +7,16 @@ function prettyPrint()
     echo -e "message: \033[32m$1\033[00m"
 }
 
+
+#Another example of a function (using the meaning_of_life.sh script)
+#This creates a new Command called meaningOfLife(), that does the code inside the curly braces
+function meaningOfLife()
+{
+    echo 42
+}
+
+
+
 #Example of using a variable, defining the variable
 ultimateanswer="$(./meaning_of_life.sh)"
 
@@ -42,3 +52,14 @@ echo -e "message: \033[32mhello\033[00m"
 
 #Example of the prettyPrint() function in action
 prettyPrint "Hello"
+
+
+#Example of the meanOfLife() function in action
+./pretty_printing.sh "The meaning of life is: "
+meaningOfLife
+
+
+#Another example of the meanOfLife() function in action
+ultimateanswer="$(meaningOfLife)"
+./pretty_printing.sh "The meaning of life is: "
+meaningOfLife 
