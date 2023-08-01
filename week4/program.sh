@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#import the functions from pirinting_and_philosophy.sh
+source ./printing_and_philosophy.sh
+
+
+
 #Example of a function (using the pretty_printing.sh script)
 #This creates a new Command called prettyPrint(), that does the code inside the curly braces
 function prettyPrint()
@@ -63,3 +68,8 @@ meaningOfLife
 ultimateanswer="$(meaningOfLife)"
 ./pretty_printing.sh "The meaning of life is: "
 meaningOfLife 
+
+
+#Example of calling a function from another script file (printing_and_philosophy.sh)
+alertMessage "Becareful of wasps!"
+echo -e "If you ever feel lost: " "$(howToThink)"
