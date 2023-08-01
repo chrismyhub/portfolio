@@ -19,3 +19,6 @@ echo -e "message: \033[32mhello\033[00m"
 #Calling on the meaning_of_life.sh script
 ./pretty_printing.sh "The meaning of life is: "
 ./meaning_of_life.sh
+
+#Example of Command Substitution
+./pretty_printing.sh "$(./meaning_of_life.sh)"
