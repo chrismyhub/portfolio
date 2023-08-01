@@ -1,7 +1,15 @@
 #!/bin/bash
 
+#Example of a function (using the pretty_printing.sh script)
+#This creates a new Command called prettyPrint(), that does the code inside the curly braces
+function prettyPrint()
+{
+    echo -e "message: \033[32m$1\033[00m"
+}
+
 #Example of using a variable, defining the variable
 ultimateanswer="$(./meaning_of_life.sh)"
+
 
 #To ensure escape sequences are respected (handles the backslashes correctly), we include -e
 echo -e "message: \033[32mhello\033[00m"
@@ -30,3 +38,7 @@ echo -e "message: \033[32mhello\033[00m"
 
 #Example of using a variable, calling the variable
 ./pretty_printing.sh "$ultimateanswer"
+
+
+#Example of the prettyPrint() function in action
+prettyPrint "Hello"
