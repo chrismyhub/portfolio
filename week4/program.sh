@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Example of using a variable, defining the variable
+ultimateanswer="$(./meaning_of_life.sh)"
+
 #To ensure escape sequences are respected (handles the backslashes correctly), we include -e
 echo -e "message: \033[32mhello\033[00m"
 
@@ -20,5 +23,10 @@ echo -e "message: \033[32mhello\033[00m"
 ./pretty_printing.sh "The meaning of life is: "
 ./meaning_of_life.sh
 
+
 #Example of Command Substitution
 ./pretty_printing.sh "$(./meaning_of_life.sh)"
+
+
+#Example of using a variable, calling the variable
+./pretty_printing.sh "$ultimateanswer"
