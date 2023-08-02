@@ -1,7 +1,7 @@
 #!/bin/bash
 #CREATED BY: Christopher Chong
-#DATE CREATED: 
-#DATE LAST MODIFIED: 
+#DATE CREATED: 16JUL2023
+#DATE LAST MODIFIED: 02AUG2023
 apiPath="https://api.exchangerate-api.com/v4/latest/EUR"
 fileName="index.html"
 Browsers="firefox"
