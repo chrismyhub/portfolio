@@ -1,4 +1,9 @@
 #!/bin/bash
+#CREATED BY: Christopher Chong
+#DATE CREATED: 16JUL2023
+#DATE LAST MODIFIED: 02AUG2023
+
+
 apiPath="https://api.exchangerate-api.com/v4/latest/AUD"
 fileName="index_au.html"
 
