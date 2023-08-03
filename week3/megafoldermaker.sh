@@ -1,4 +1,7 @@
-#!/bin/bash 
+#!/bin/bash
+#CREATED BY: Christopher Chong
+#DATE CREATED: 29JUL2023
+#DATE LAST MODIFIED: 03AUG2023
       
 #If there aren't two arguments to the script 
       
