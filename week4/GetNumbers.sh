@@ -22,13 +22,14 @@ printError()
 getNumber() 
       
 { 
-      
+    #Unsure what this line of code is doing  
     read -p "$1: " 
       
     while (( $REPLY < $2 || $REPLY> $3 )); do 
       
         printError "Input must be between $2 and $3" 
-      
+        
+        #Unsure what this line of code is doing 
         read -p "$1: " 
       
     done 
