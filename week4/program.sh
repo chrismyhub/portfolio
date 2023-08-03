@@ -1,4 +1,7 @@
 #!/bin/bash
+#CREATED BY: Christopher Chong
+#DATE CREATED: 01AUG2023
+#DATE LAST MODIFIED: 03AUG2023
 
 #import the functions from pirinting_and_philosophy.sh
 source ./printing_and_philosophy.sh
