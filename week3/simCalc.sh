@@ -1,4 +1,7 @@
 #!/bin/bash
+#CREATED BY: Christopher Chong
+#DATE CREATED: 28JUL2023
+#DATE LAST MODIFIED: 03AUG2023
 
 #Color code variables
 red_color='\033[31m'
