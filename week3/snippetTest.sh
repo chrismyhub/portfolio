@@ -1,4 +1,7 @@
 #!/bin/bash
+#CREATED BY: Christopher Chong
+#DATE CREATED: 27JUL2023
+#DATE LAST MODIFIED: 03AUG2023
 
 
 black_color='\033[30m'
