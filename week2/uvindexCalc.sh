@@ -1,4 +1,7 @@
 #!/bin/bash
+#CREATED BY: Christopher Chong
+#DATE CREATED: 20JUL2023
+#DATE LAST MODIFIED: 03AUG2023
 
 #UV INdex Recommendation Calculator
     # 0-2 Low (Minimal protection required.)
