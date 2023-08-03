@@ -1,4 +1,7 @@
 #!/bin/bash
+#CREATED BY: Christopher Chong
+#DATE CREATED: 19JUL2023
+#DATE LAST MODIFIED: 03AUG2023
 
 #User to type in folderName and save it as variable
 read -p "Please type a folder name: " folderName
