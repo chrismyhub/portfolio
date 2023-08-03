@@ -1,4 +1,7 @@
-#!/bin/bash 
+#!/bin/bash
+#CREATED BY: Christopher Chong
+#DATE CREATED: 21JUL2023
+#DATE LAST MODIFIED: 03AUG2023
       
 echo "enter the password" 
       
