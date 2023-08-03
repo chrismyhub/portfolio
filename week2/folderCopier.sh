@@ -1,4 +1,7 @@
 #!/bin/bash
+#CREATED BY: Christopher Chong
+#DATE CREATED: 24JUL2023
+#DATE LAST MODIFIED: 03AUG2023
 
 #Retreive folder name for copying from user
 read -p "Type the name of the folder you would like to copy: " folderName
