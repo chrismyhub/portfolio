@@ -1,4 +1,7 @@
 #!/bin/bash
+#CREATED BY: Christopher Chong
+#DATE CREATED: 30JUL2023
+#DATE LAST MODIFIED: 03AUG2023
 
 #Prompt user to enter the file to check and save as a variable
 read -p "Please enter the file to be checked: " FILE
