@@ -28,7 +28,7 @@ notNumber()
         elif [[ $REPLY -gt $2 ]]
         then
             printError "Too High!" 
-        read VAR
+        #If ENTER is pressed ~NOT WORKING
         elif [[ -z $VAR ]]
         then printError "Please enter an integer!"
         
