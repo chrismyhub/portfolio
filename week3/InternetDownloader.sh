@@ -1,4 +1,7 @@
 #!/bin/bash
+#CREATED BY: Christopher Chong
+#DATE CREATED: 30JUL2023
+#DATE LAST MODIFIED: 03AUG2023
 
 #Start of while loop
 while true
