@@ -1,4 +1,7 @@
 #!/bin/bash
+#CREATED BY: Christopher Chong
+#DATE CREATED: 17JUL2023
+#DATE LAST MODIFIED: 03AUG2023
 
 #This will save the user inputs for 3 names as variables
 #The -r is for Raw input
