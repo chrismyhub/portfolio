@@ -25,23 +25,23 @@ notNumber()
         #If only ENTER key is pressed and nothing else, instruct user to enter an integer
         if [[ $key = "" && $REPLY = "" ]]
         then 
-            printError "Please enter an integer!"
+            printError "Input must be between 1 and 100!"
 
         #If the number is less than 42, it will display "Too Low!" 
         #The "$REPLY =~ ^[0-9]+$ " checks that it is only an integer entered
         elif [[ $REPLY -lt $2 && $REPLY =~ ^[0-9]+$ ]]
         then
-            printError "Too Low!" 
+            echo "Too Low!" 
 
         #If the number is more than 42, it will display "Too High!" 
         #The "$REPLY =~ ^[0-9]+$ " checks that it is only an integer entered
         elif [[ $REPLY -gt $2 && $REPLY =~ ^[0-9]+$ ]] 
         then
-            printError "Too High!" 
+            echo "Too High!" 
 
         #If none of the above conditions are met, instruct user to input an integer
         else
-            printError "Please enter an integer!"
+            printError "Input must be between 1 and 100!"
         fi
         
         read -p "$1: " 
@@ -55,9 +55,8 @@ notNumber()
 echo "Welcome to the Guessing Game!" 
 #New line to space out welcome message.
 echo
-#Instruct user to enter a number
-echo "Try to guess the number I am thinking of..."     
-notNumber "...type your guess here: " 42
+#Instruct user to enter a number between 1 and 100    
+notNumber "Please type a number between 1 and 100: " 42
 
 #When user has entered the corect number, the while loop is complete and the following message will appear.
 echo "Correct!" 
