@@ -8,4 +8,4 @@
 net_info="$(ifconfig)"
 
 #Replace inet with IP Address
-echo $net_info | sed 's/inet/IP Address:/' 
+echo $net_info | sed '/inet / s/inet/IP Address:/' 
