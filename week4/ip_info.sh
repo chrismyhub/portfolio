@@ -11,7 +11,7 @@ net_info="$(ifconfig)"
 #Using -n will not output sed unless using print command.
 echo "$net_info" | sed -n '/inet / {
     s/inet/IP Address:/
-    s/netmask/Subnet Mask:/
-    s/broadcast/Broadcast Address/
+    s/netmask/\n\t\tSubnet Mask:/
+    s/broadcast/\n\t\tBroadcast Address/
     p
     }' 
