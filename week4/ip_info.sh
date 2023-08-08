@@ -9,9 +9,13 @@ net_info="$(ifconfig)"
 
 #Replace inet with IP Address, netmask with Subnet Mask and broadcast with Broadcast Address.
 #Using -n will not output sed unless using print command.
-echo "$net_info" | sed -n '/inet / {
+#Set this whole section as a variable "addresses"
+addresses=$(echo "$net_info" | sed -n '/inet / {
     s/inet/IP Address:/
     s/netmask/\n\t\tSubnet Mask:/
     s/broadcast/\n\t\tBroadcast Address/
     p
-    }' 
+    }' )
+
+#Display the variable "addresses" 
+echo -e "The IP addresses on this computer are:\n$addresses"
