@@ -1,7 +1,7 @@
 #!/bin/bash
 #CREATED BY: Christopher Chong
 #DATE CREATED: 07AUG2023
-#DATE LAST MODIFIED: 07AUG2023
+#DATE LAST MODIFIED: 08AUG2023
 
 
 #Set variable for ifconfig command
@@ -19,3 +19,5 @@ addresses=$(echo "$net_info" | sed -n '/inet / {
 
 #Display the variable "addresses" 
 echo -e "The IP addresses on this computer are:\n$addresses"
+
+
