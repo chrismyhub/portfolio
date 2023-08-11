@@ -2,6 +2,12 @@
 #CREATED BY: Christopher Chong
 #DATE CREATED: 11AUG2023
 #DATE LAST MODIFIED: 11AUG2023 
+
+#Filter for only "/bin/bash" and set as a variable
+#This code works on CLI only
+FILTER=$( awk '/bin\/bash/' /etc/passwd )
+#this code not sure how to implement
+echo -e /etc/passwd | awk '/bin\/bash/'
       
 #This is the beginning of the awk script.
 #It includes the File Separator.
@@ -32,4 +38,4 @@ END {
       
     print("_______________________________________________________________________________________________________________"); 
       
-}' /etc/passwd
+}' $FILTER
