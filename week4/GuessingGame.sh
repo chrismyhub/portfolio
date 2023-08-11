@@ -59,4 +59,4 @@ echo
 notNumber "Please type a number between 1 and 100: " 42
 
 #When user has entered the corect number, the while loop is complete and the following message will appear.
-echo "Correct!" 
+echo "Right!" 
