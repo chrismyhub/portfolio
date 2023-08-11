@@ -16,4 +16,5 @@ grep -rP '(?<!\d)\d{3}(?!\d)'
 grep -rE '\w\s+\w\w+\s+\w'
 
 #Find all lines that would make a good password (use your knowledge of cybersecurity to decide what makes a good password).
-					
+#Finding all words that have 8 or more characters, at least 1 digit, at least one special character and at least one upper case charater.
+grep -rP '^(?=.*\w{8,})(?=.*[0-9]+)(?=.*[@#$]+)(?=.*[A-Z]+)'
