@@ -13,5 +13,7 @@ grep -r '^[m]'
 grep -rP '(?<!\d)\d{3}(?!\d)'
 
 #Find all echo statements with at least three words
+grep -rE '\w\s+\w\w+\s+\w'
+
 #Find all lines that would make a good password (use your knowledge of cybersecurity to decide what makes a good password).
 					
