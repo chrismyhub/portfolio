@@ -1,8 +1,10 @@
 #!/bin/bash
 #CREATED BY: Christopher Chong
 #DATE CREATED: 11AUG2023
-#DATE LAST MODIFIED: 11AUG2023 
-      
+#DATE LAST MODIFIED: 12AUG2023 
+
+#Display heading for data "Google Server IPs:".
+#Tabulate data using pipes and between BEGIN and END sections.    
 echo "Google Server IPs:" 
       
 awk 'BEGIN { 
