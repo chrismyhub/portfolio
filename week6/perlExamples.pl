@@ -3,4 +3,7 @@
 # DATE CREATED: 16AUG2023
 # DATE LAST MODIFIED: 16AUG2023 
 
+$value="blah";
+
 print "Hello there\n";
+print "This is more text and the value is $value\n";
