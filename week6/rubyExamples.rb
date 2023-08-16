@@ -9,4 +9,10 @@ puts("hi there")
 
 value = "blah"
 
+items = [1,2,5,26,13,14]
+
 puts("the value is " + value)
+
+for item in items   
+    puts(item)
+end
