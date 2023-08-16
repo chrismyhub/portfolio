@@ -13,6 +13,6 @@ items = [1,2,5,26,13,14]
 
 puts("the value is " + value)
 
-items.each do | item |   
-    puts(item)
+for i in 0.step(5)   
+    puts(items[i])
 end
