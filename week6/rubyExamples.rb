@@ -13,6 +13,4 @@ items = [1,2,5,26,13,14]
 
 puts("the value is " + value)
 
-for i in 0.step(5)   
-    puts(items[i])
-end
+items.each { | item | puts(item) }
