@@ -14,24 +14,31 @@ from datetime import datetime
 startTime = datetime.now()
 
 #Define array of characters and numbers
-data = "abcdefghijklmnopqrstuvwxyz0123456789"
+data = "abcdefghijklmnopqrstuvwxyz"
 
 #Convert into array
 array = list(data)
 
-#Request user to enter password
-password = str(input("password"))
+#
+#hidden password hash
+passwordHash = "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824"
+#Passing through variable wordlistHash
+wordlistHash =""
 
 #While loop to iterate combination of characters/numbers
-combination = ""
-while(combination != password):
-    combination = random.choices(array,k=len(password))
-    print(combination)
-    combination="".join(combination)
+while(wordlistHash != passwordHash):
+    word = random.choices(array,k=5)
+    print(word)
+    word="".join(word)
 
-#Display the result of the bruteforce
-print("the password is: " + combination)
+    #hash the word
+    wordlistHash = hashlib.sha256(word.encode("utf-8")).hexdigest()
+    print(f"Trying password {word}:{wordlistHash}")
 
-#Display the time taken to run the bruteforce
-print(datetime.now() - startTime)
-
+    #if the hash is the same as the correct password's hash then we have cracked the password!
+    if(wordlistHash == passwordHash):
+        print(f"Password has been cracked! It was {word}")
+            
+        #Display the time taken to run the bruteforce
+        print(datetime.now() - startTime)
+        break
