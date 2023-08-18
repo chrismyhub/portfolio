@@ -33,10 +33,9 @@ while(wordlistHash != passwordHash):
     k_num += 1   
 
     #Start of "for" loop to begin finding combination/permutations of words.     
-    for group in itertools.product(array, repeat=k_num):
-        print(group)
-        word = group
-        word="".join(group)
+    for word in itertools.product(array, repeat=k_num):
+        print(word)
+        word="".join(word)
         print(word)
     
         #hash the word
