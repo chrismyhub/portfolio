@@ -14,7 +14,7 @@ import itertools
 startTime = datetime.now()
 
 #Define array of characters and numbers
-data = "abcdefghijklmnopqrstuvwxyz"
+data = "abcdefghijklmnopqrstuvwxyz0123456789"
 
 #Convert into array
 array = list(data)
